@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Shopping Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f2f2f2;
+        }
+
+        header {
+            background: #2874f0;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav {
+            background: #17365d;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2874f0;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 200px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px #ccc;
+        }
+
+        .card img {
+            width: 150px;
+            height: 130px;
+            object-fit: contain;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+
+        button {
+            background: #2874f0;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: #17365d;
+        }
+
+        .offer {
+            background: #ffe082;
+            text-align: center;
+            padding: 15px;
+            margin: 15px;
+        }
+
+        footer {
+            background: #17365d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>EasyShop</h1>
+        <p>Your Online Shopping Store</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#offers">Offers</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="offer" id="offers">
+        <h2>Special Offer!</h2>
+        <p>Get up to 30% discount on selected products.</p>
+    </div>
+
+    <h2 id="products">Our Products</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="https://placehold.co/150x130?text=Headphones"
+                 alt="Headphones">
+            <h3>Headphones</h3>
+            <p class="price">₹999</p>
+            <p>Rating: 4.5/5</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://placehold.co/150x130?text=Watch"
+                 alt="Watch">
+            <h3>Smart Watch</h3>
+            <p class="price">₹1499</p>
+            <p>Rating: 4.2/5</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://placehold.co/150x130?text=Shoes"
+                 alt="Shoes">
+            <h3>Shoes</h3>
+            <p class="price">₹1999</p>
+            <p>Rating: 4.4/5</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://placehold.co/150x130?text=Bag"
+                 alt="Bag">
+            <h3>Travel Bag</h3>
+            <p class="price">₹799</p>
+            <p>Rating: 4.0/5</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+    <footer id="contact">
+        <p>Contact: easyshop@example.com</p>
+        <p>© 2026 EasyShop</p>
+    </footer>
+
+</body>
+</html>
