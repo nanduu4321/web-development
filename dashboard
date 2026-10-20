@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Academic Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+        }
+
+        .sidebar {
+            width: 220px;
+            height: 100vh;
+            background: #17365d;
+            color: white;
+            position: fixed;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 30px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+        }
+
+        .sidebar a:hover {
+            background: #2874a6;
+        }
+
+        .main {
+            margin-left: 240px;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #17365d;
+        }
+
+        .cards {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        .cards .card {
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .card h2 {
+            color: #2874a6;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background: #17365d;
+            color: white;
+        }
+
+        .progress {
+            background: #ddd;
+            height: 12px;
+            border-radius: 10px;
+        }
+
+        .bar {
+            background: #27ae60;
+            height: 12px;
+            width: 85%;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .main {
+                margin-left: 0;
+                padding: 12px;
+            }
+
+            .cards {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <h2>Student Portal</h2>
+        <a href="#">Dashboard</a>
+        <a href="#details">Student Details</a>
+        <a href="#results">Semester Results</a>
+        <a href="#attendance">Attendance</a>
+        <a href="#exams">Exam Schedule</a>
+        <a href="#announcements">Announcements</a>
+    </div>
+
+    <div class="main">
+        <h1>Student Academic Dashboard</h1>
+        <p>Welcome, Nandini!</p>
+
+        <div class="card" id="details">
+            <h2>Student Details</h2>
+            <p>Name: Nandini</p>
+            <p>Roll Number: 26000854</p>
+            <p>Section: CSM1</p>
+            <p>Department: Computer Science</p>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Semester GPA</h3>
+                <h2>8.5</h2>
+            </div>
+
+            <div class="card" id="attendance">
+                <h3>Attendance</h3>
+                <h2>85%</h2>
+                <div class="progress">
+                    <div class="bar"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Total Subjects</h3>
+                <h2>6</h2>
+            </div>
+        </div>
+
+        <div class="card" id="results">
+            <h2>Semester Results</h2>
+            <table>
+                <tr>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <td>HTML and CSS</td>
+                    <td>90</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>Mathematics</td>
+                    <td>85</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Programming</td>
+                    <td>88</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Database</td>
+                    <td>80</td>
+                    <td>B+</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card" id="exams">
+            <h2>Examination Schedule</h2>
+            <p>HTML and CSS - 10 November</p>
+            <p>Mathematics - 12 November</p>
+            <p>Programming - 15 November</p>
+        </div>
+
+        <div class="card" id="announcements">
+            <h2>Announcements</h2>
+            <p>1. Internal examinations start next week.</p>
+            <p>2. Submit assignments before the deadline.</p>
+            <p>3. Check attendance regularly.</p>
+        </div>
+    </div>
+
+</body>
+</html>
